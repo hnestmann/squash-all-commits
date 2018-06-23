@@ -1,3 +1,6 @@
+git checkout --orphan new-master
 git branch -m master old-master
-git branch -m new-branch master
+git branch -m new-master master
 git push -f origin master
+git -D old-master
+git push
